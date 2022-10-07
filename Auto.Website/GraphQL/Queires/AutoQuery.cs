@@ -9,10 +9,10 @@ using GraphQL.Types;
 
 namespace Auto.Website.GraphQL.Queires;
 
-public class VehicleQuery : ObjectGraphType {
+public class AutoQuery : ObjectGraphType {
     private readonly IAutoDatabase _db;
 
-    public VehicleQuery(IAutoDatabase db) {
+    public AutoQuery(IAutoDatabase db) {
         this._db = db;
 
         Field<ListGraphType<VehicleGraphType>>("Vehicles", "Запрос, возвращающий все автомобили",
@@ -25,6 +25,17 @@ public class VehicleQuery : ObjectGraphType {
         Field<ListGraphType<VehicleGraphType>>("VehiclesByColor", "Запрос, возвращающий все машины с выбранным цветом",
             new QueryArguments(MakeNonNullStringArgument("color", "Имя цвета")),
             resolve: GetVehiclesByColor);
+        
+        Field<ListGraphType<OwnerGraphType>>("Owners", "Запрос, возвращающий всех владельцев",
+            resolve: GetAllOwners);
+
+        Field<OwnerGraphType>("Owner", "Запрос к конкретному владельцу",
+            new QueryArguments(MakeNonNullStringArgument("email", "Email владельца")),
+            resolve: GetOwner);
+
+        Field<ListGraphType<OwnerGraphType>>("OwnersByLastName", "Запрос, возвращающий всех владельцев с определенной фамилией",
+            new QueryArguments(MakeNonNullStringArgument("lastName", "Фамилия")),
+            resolve: GetOwnersByLastName);
     }
 
     private QueryArgument MakeNonNullStringArgument(string name, string description) {
@@ -44,5 +55,18 @@ public class VehicleQuery : ObjectGraphType {
         var color = context.GetArgument<string>("color");
         var vehicles = _db.ListVehicles().Where(v => v.Color.Contains(color, StringComparison.InvariantCultureIgnoreCase));
         return vehicles;
+    }
+    
+    private IEnumerable<Owner> GetAllOwners(IResolveFieldContext<object> context) => _db.ListOwners();
+
+    private Owner GetOwner(IResolveFieldContext<object> context) {
+        var email = context.GetArgument<string>("email");
+        return _db.FindOwner(email);
+    }
+
+    private IEnumerable<Owner> GetOwnersByLastName(IResolveFieldContext<object> context) {
+        var lastName = context.GetArgument<string>("lastName");
+        var owners = _db.ListOwners().Where(v => v.LastName.Contains(lastName, StringComparison.InvariantCultureIgnoreCase));
+        return owners;
     }
 }

@@ -40,10 +40,10 @@ namespace Auto.Website {
                 });
 
             services.AddGraphQL(builder => builder
-                .AddNewtonsoftJson()            // Сторонний генератор json
-                .AddAutoSchema<AutoSchema>()    // Добавляет middleware для обработки схемы
-                .AddSchema<AutoSchema>()        // Добавляет схему
-                .AddGraphTypes(typeof(VehicleGraphType).Assembly)
+                .AddNewtonsoftJson()                // Сторонний генератор json
+                .AddAutoSchema<AutoSchema>()        // Добавляет middleware для обработки схемы
+                .AddSchema<AutoSchema>()            // Добавляет схему
+                //.AddGraphTypes(typeof(VehicleGraphType).Assembly)
             );
         }
 
@@ -61,8 +61,8 @@ namespace Auto.Website {
 
             app.UseSwagger();
             app.UseSwaggerUI();
-
             app.UseGraphQL<AutoSchema>();
+            
             app.UseGraphQLGraphiQL("/graphiql");
 
             app.UseEndpoints(endpoints => {

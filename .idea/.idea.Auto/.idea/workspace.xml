@@ -4,7 +4,15 @@
     <projectFile profileName="Auto.Website">Auto.Website/Auto.Website.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="" />
+    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/OwnerGraphType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Data/csv-data/owners.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/csv-data/owners.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/VehicleMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/AutoMutation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Queires/VehicleQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Queires/AutoQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Schemas/AutoSchema.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Schemas/AutoSchema.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Startup.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +37,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Ew6Zb1LwvbS7RjBzmRikDDK1h9" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.environmentSetup",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Auto.Website" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.Website/Auto.Website.csproj" />
@@ -75,6 +85,7 @@
       <workItem from="1664764117186" duration="1503000" />
       <workItem from="1664835002944" duration="9308000" />
       <workItem from="1665013309489" duration="322000" />
+      <workItem from="1665140194718" duration="7818000" />
     </task>
     <servers />
   </component>
@@ -84,6 +95,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
