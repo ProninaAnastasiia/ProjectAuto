@@ -9,6 +9,7 @@ using System.IO;
 using System.Reflection;
 using Auto.Website.GraphQL.GraphTypes;
 using Auto.Website.GraphQL.Schemas;
+using EasyNetQ;
 using GraphQL.Server.Ui.GraphiQL;
 using GraphQL;
 using GraphQL.MicrosoftDI;
@@ -45,6 +46,9 @@ namespace Auto.Website {
                 .AddSchema<AutoSchema>()            // Добавляет схему
                 //.AddGraphTypes(typeof(VehicleGraphType).Assembly)
             );
+            
+            var bus = RabbitHutch.CreateBus(Configuration.GetConnectionString("AutoRabbitMQ"));
+            services.AddSingleton<IBus>(bus);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
@@ -61,8 +65,8 @@ namespace Auto.Website {
 
             app.UseSwagger();
             app.UseSwaggerUI();
-            app.UseGraphQL<AutoSchema>();
             
+            app.UseGraphQL<AutoSchema>();
             app.UseGraphQLGraphiQL("/graphiql");
 
             app.UseEndpoints(endpoints => {
