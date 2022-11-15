@@ -3,10 +3,12 @@ using GraphQL.Types;
 
 namespace Auto.Website.GraphQL.GraphTypes;
 
-public class OwnerGraphType: ObjectGraphType<Owner> {
-    public OwnerGraphType() {
+public class OwnerGraphType : ObjectGraphType<Owner>
+{
+    public OwnerGraphType()
+    {
         Name = "owner";
-        Field(c => c.Vehicle, nullable: true, type: typeof(VehicleGraphType))
+        Field(c => c.Vehicle, true, typeof(VehicleGraphType))
             .Description("Автомобиль");
         Field(c => c.FirstName);
         Field(c => c.LastName);

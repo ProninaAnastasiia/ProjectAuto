@@ -5,7 +5,8 @@ using GraphQL.Types;
 
 namespace Auto.Website.GraphQL.Schemas;
 
-public class AutoSchema : Schema {
+public class AutoSchema : Schema
+{
     public AutoSchema(IAutoDatabase db)
     {
         Query = new AutoQuery(db);

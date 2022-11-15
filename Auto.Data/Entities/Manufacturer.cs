@@ -1,16 +1,17 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 
-namespace Auto.Data.Entities {
-	public partial class Manufacturer {
-		public Manufacturer() {
-			Models = new HashSet<Model>();
-		}
+namespace Auto.Data.Entities;
 
-		public string Code { get; set; }
-		public string Name { get; set; }
+public class Manufacturer
+{
+    public Manufacturer()
+    {
+        Models = new HashSet<Model>();
+    }
 
-		[JsonIgnore]
-		public virtual ICollection<Model> Models { get; set; }
-	}
+    public string Code { get; set; }
+    public string Name { get; set; }
+
+    [JsonIgnore] public virtual ICollection<Model> Models { get; set; }
 }

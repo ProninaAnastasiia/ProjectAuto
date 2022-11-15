@@ -1,26 +1,26 @@
-﻿using Auto.Website.GraphQL.GraphTypes;
+﻿using Auto.Data;
 using Auto.Data.Entities;
-using Auto.Data;
+using Auto.Website.GraphQL.GraphTypes;
 using GraphQL;
 using GraphQL.Types;
 
 namespace Auto.Website.GraphQL.Mutations;
 
-public class AutoMutation: ObjectGraphType
+public class AutoMutation : ObjectGraphType
 {
     private readonly IAutoDatabase _db;
 
     public AutoMutation(IAutoDatabase db)
     {
-        this._db = db;
-        
+        _db = db;
+
         Field<VehicleGraphType>(
             "createVehicle",
             arguments: new QueryArguments(
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "registration"},
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "color"},
-                new QueryArgument<NonNullGraphType<IntGraphType>> { Name = "year"},
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "modelCode"}
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "registration"},
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "color"},
+                new QueryArgument<NonNullGraphType<IntGraphType>> {Name = "year"},
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "modelCode"}
             ),
             resolve: context =>
             {
@@ -42,15 +42,15 @@ public class AutoMutation: ObjectGraphType
                 return vehicle;
             }
         );
-        
+
         Field<OwnerGraphType>(
             "createOwner",
             arguments: new QueryArguments(
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "firstName"},
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "lastName"},
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "phoneNumber"},
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "vehicleCode"},
-                new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "email"}
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "firstName"},
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "lastName"},
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "phoneNumber"},
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "vehicleCode"},
+                new QueryArgument<NonNullGraphType<StringGraphType>> {Name = "email"}
             ),
             resolve: context =>
             {
@@ -74,7 +74,5 @@ public class AutoMutation: ObjectGraphType
                 return owner;
             }
         );
-        
-        
     }
 }
