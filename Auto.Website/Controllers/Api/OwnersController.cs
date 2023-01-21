@@ -120,7 +120,7 @@ public class OwnersController : ControllerBase
         {
             FirstName = owner.FirstName,
             LastName = owner.LastName,
-            VehicleName = owner.Vehicle?.Registration,
+            VehicleCode = owner.Vehicle?.Registration,
             Email = owner.Email,
             ListedAtUtc = DateTime.UtcNow
         };

@@ -20,7 +20,7 @@ internal class Program
     private static void HandleNewOwnerMessage(NewOwnerMessage message)
     {
         var csv =
-            $"{message.FirstName},{message.LastName},{message.VehicleName},{message.Email},{message.ListedAtUtc:O}";
+            $"{message.FirstName},{message.LastName},{message.VehicleCode},{message.Email},{message.ListedAtUtc:O}";
         if (message.LastName == "Imposter")
             Console.WriteLine(csv + " - Imposter присвоил автомобиль, хотя ему нельзя.");
         else Console.WriteLine(csv);

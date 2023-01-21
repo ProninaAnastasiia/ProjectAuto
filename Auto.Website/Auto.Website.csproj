@@ -9,21 +9,30 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="EasyNetQ" Version="8.0.0-alpha5"/>
-        <PackageReference Include="GraphiQL" Version="2.0.0"/>
-        <PackageReference Include="GraphQL" Version="7.1.1"/>
-        <PackageReference Include="GraphQL.MicrosoftDI" Version="7.1.1"/>
-        <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="7.1.1"/>
-        <PackageReference Include="GraphQL.NewtonsoftJson" Version="7.1.1"/>
-        <PackageReference Include="GraphQL.Server.Ui.GraphiQL" Version="7.1.1"/>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16"/>
-        <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0"/>
-        <PackageReference Include="newtonsoft.json" Version="13.0.1"/>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+        <PackageReference Include="EasyNetQ" Version="8.0.0-alpha5" />
+        <PackageReference Include="GraphiQL" Version="2.0.0" />
+        <PackageReference Include="GraphQL" Version="7.1.1" />
+        <PackageReference Include="GraphQL.MicrosoftDI" Version="7.1.1" />
+        <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="7.1.1" />
+        <PackageReference Include="GraphQL.NewtonsoftJson" Version="7.1.1" />
+        <PackageReference Include="GraphQL.Server.Ui.GraphiQL" Version="7.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.16" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+        <PackageReference Include="newtonsoft.json" Version="13.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Auto.Data\Auto.Data.csproj"/>
-        <ProjectReference Include="..\Auto.Messages\Auto.Messages.csproj"/>
+        <ProjectReference Include="..\Auto.Data\Auto.Data.csproj" />
+        <ProjectReference Include="..\Auto.Messages\Auto.Messages.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Models\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Models\Vehicles.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Vehicles\Advertise.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Vehicles\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Vehicles\Index.cshtml" />
     </ItemGroup>
 </Project>

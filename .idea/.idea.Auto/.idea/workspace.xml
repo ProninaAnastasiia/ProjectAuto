@@ -5,54 +5,110 @@
     <projectFile>Auto.testClient/Auto.testClient.csproj</projectFile>
     <projectFile>Auto.OwnerClient/Auto.OwnerClient.csproj</projectFile>
     <projectFile>Auto.OwnersClient/Auto.OwnersClient.csproj</projectFile>
+    <projectFile>Auto.SignalR.Client/Auto.SignalR.Client.csproj</projectFile>
+    <projectFile>Auto.PricingClient/Auto.PricingClient.csproj</projectFile>
     <projectFile profileName="Auto.Website">Auto.Website/Auto.Website.csproj</projectFile>
     <projectFile profileName="Auto.gRPCtest">Auto.gRPCtest/Auto.gRPCtest.csproj</projectFile>
     <projectFile profileName="Auto.OwnerServer">Auto.OwnerServer/Auto.OwnerServer.csproj</projectFile>
     <projectFile profileName="Auto.OwnersServer">Auto.OwnersServer/Auto.OwnersServer.csproj</projectFile>
+    <projectFile profileName="Auto.PricingServer">Auto.PricingServer/Auto.PricingServer.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerClient/Auto.OwnerClient.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerClient/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/Auto.OwnerServer.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/Protos/owner.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/Services/OwnerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.OwnerServer/appsettings.json" afterDir="false" />
+    <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="Added SignalR">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auto.dir/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auto.dir/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auto.dir/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auto.dir/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Notifier/Auto.Notifier.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Notifier/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingClient/Auto.PricingClient.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingClient/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/Auto.PricingServer.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/Protos/price.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/Services/VehiclePricingService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.PricingServer/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Hubs/AutoHub.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Models/ErrorViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/js/site.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.AuditLog/Auto.AuditLog.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.AuditLog/Auto.AuditLog.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.AuditLog/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.AuditLog/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.AuditLog/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.AuditLog/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Auto.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Auto.Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/AutoCsvFileDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/AutoCsvFileDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Entities/Manufacturer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Entities/Manufacturer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Entities/Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Entities/Model.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Entities/Owner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Entities/Owner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/Entities/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/Entities/Vehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Data/IAutoDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Data/IAutoDatabase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.Messages/NewOwnerMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Messages/NewOwnerMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.OwnerServer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.OwnerServer/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.Website/Auto.Website.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Auto.Website.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/ApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/ApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/HypermediaExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/HypermediaExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/ModelsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/ModelsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/OwnersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/OwnersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Controllers/Api/VehiclesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Controllers/Api/VehiclesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/ManufacturerGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/ManufacturerGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/ModelGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/ModelGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/OwnerGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/OwnerGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/VehicleGraphType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/GraphTypes/VehicleGraphType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/AutoMutation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Mutations/AutoMutation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Queires/AutoQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Queires/AutoQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/GraphQL/Schemas/AutoSchema.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/GraphQL/Schemas/AutoSchema.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Models/OwnerDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Models/OwnerDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Models/VehicleDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Models/VehicleDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.Website/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Website/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auto.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +121,7 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50b9fdb5decb45c2a37535a22a5d75fa60c90/b3/d0043053/Hub.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/1d/804d3c57/Uri.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/1e/3d76e1bc/UriBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/5d/7fd414f4/UriHelper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -91,7 +148,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7e231682be8652744726acc6de35323daa68061429db55e0c251114902f60/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8d3bcb75657e1215392dfd276529f3c965e923e468ed653f863cdffe755472/HttpProtocol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f324c62785677b53e916aa9084ae54a42014c79d132908ae191cf8e3af4cfb/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Auto.Notifier/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Auto.OwnerServer/obj/Debug/net6.0/Protos/Greet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Auto.PricingClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -101,7 +160,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -116,7 +174,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Project.Auto.OwnerClient">
+  <component name="RunManager" selected=".NET Project.Auto.Notifier">
     <configuration name="Auto.AuditLog" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -134,6 +192,24 @@
       <method v="2">
         <option name="Build" />
         <option name="Build" default="false" projectName="Auto.AuditLog" projectPath="file://$PROJECT_DIR$/Auto.AuditLog/Auto.AuditLog.csproj" />
+      </method>
+    </configuration>
+    <configuration name="Auto.Notifier" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Auto.Notifier/bin/Debug/net6.0/Auto.Notifier.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Auto.Notifier/bin/Debug/net6.0" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Auto.Notifier/Auto.Notifier.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="net6.0" />
+      <method v="2">
+        <option name="Build" />
       </method>
     </configuration>
     <configuration name="Auto.OwnerClient" type="DotNetProject" factoryName=".NET Project" temporary="true">
@@ -154,10 +230,43 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Auto.PricingClient" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Auto.PricingClient/Auto.PricingClient.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="Auto.OwnerServer" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.OwnerServer/Auto.OwnerServer.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="Auto.OwnerServer" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Auto.PricingServer" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Auto.PricingServer/Auto.PricingServer.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="Auto.PricingServer" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -185,8 +294,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.Auto.PricingServer" />
       <item itemvalue=".NET Launch Settings Profile.Auto.Website" />
       <item itemvalue=".NET Launch Settings Profile.Auto.OwnerServer" />
+      <item itemvalue=".NET Project.Auto.PricingClient" />
+      <item itemvalue=".NET Project.Auto.Notifier" />
       <item itemvalue=".NET Project.Auto.AuditLog" />
       <item itemvalue=".NET Project.Auto.OwnerClient" />
     </list>
@@ -227,6 +339,23 @@
       <workItem from="1668468657321" duration="69000" />
       <workItem from="1668535771592" duration="159000" />
       <workItem from="1668535972846" duration="1624000" />
+      <workItem from="1670898897323" duration="49000" />
+      <workItem from="1670898980157" duration="25000" />
+      <workItem from="1670899030927" duration="3000" />
+      <workItem from="1670899064129" duration="58000" />
+      <workItem from="1670899188387" duration="4709000" />
+      <workItem from="1670966618967" duration="97000" />
+      <workItem from="1670969569847" duration="968000" />
+      <workItem from="1671487066119" duration="53000" />
+      <workItem from="1671933609346" duration="17000" />
+      <workItem from="1671933657244" duration="199000" />
+      <workItem from="1674125581738" duration="14791000" />
+      <workItem from="1674172826504" duration="443000" />
+      <workItem from="1674173284153" duration="90000" />
+      <workItem from="1674173444758" duration="97000" />
+      <workItem from="1674173558690" duration="1707000" />
+      <workItem from="1674175334334" duration="7786000" />
+      <workItem from="1674325881095" duration="3054000" />
     </task>
     <task id="LOCAL-00001" summary="Added GraphQL for Owner">
       <created>1665148060603</created>
@@ -258,6 +387,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added GraphQL for Owner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GraphQL for Owner" />
+    <MESSAGE value="Added SignalR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added SignalR" />
   </component>
 </project>

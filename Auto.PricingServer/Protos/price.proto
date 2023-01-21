@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "Auto.PricingServer";
+
+package price;
+
+// The greeting service definition.
+service Pricer {
+  // Sends a greeting
+  rpc GetVehiclePrice (PriceRequest) returns (PriceReply);
+}
+
+// The request message containing the user's name.
+message PriceRequest {
+  string vehicleCode = 1;
+}
+
+// The response message containing the greetings.
+message PriceReply {
+  string registration = 1;
+  string vehicleModelCode = 2;
+  string vehicleColor = 3;
+  int32 vehicleYear = 4;
+  sint32 price = 5;
+  string currencyCode = 6;
+}

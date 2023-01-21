@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using Auto.Data;
 using Auto.Website.GraphQL.Schemas;
+using Auto.Website.Hubs;
 using EasyNetQ;
 using GraphQL;
 using Microsoft.AspNetCore.Builder;
@@ -29,6 +30,8 @@ public class Startup
         services.AddRouting(options => options.LowercaseUrls = true);
         services.AddControllersWithViews().AddNewtonsoftJson();
         services.AddSingleton<IAutoDatabase, AutoCsvFileDatabase>();
+        
+        services.AddSignalR();
 
         services.AddSwaggerGen(
             config =>
@@ -72,6 +75,7 @@ public class Startup
 
         app.UseEndpoints(endpoints =>
         {
+            endpoints.MapHub<AutoHub>("/hub");
             endpoints.MapControllerRoute(
                 "default",
                 "{controller=Home}/{action=Index}/{id?}");

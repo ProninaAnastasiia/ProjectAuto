@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EasyNetQ" Version="6.3.1" />
+      <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.0" />
+      <PackageReference Include="System.Text.Json" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Auto.Data\Auto.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Auto.Messages\Auto.Messages.csproj" />
+    </ItemGroup>
+
+</Project>

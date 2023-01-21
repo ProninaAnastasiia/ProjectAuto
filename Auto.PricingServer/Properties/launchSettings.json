@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "Auto.PricingServer": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5175;https://localhost:7175",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
