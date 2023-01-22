@@ -2,17 +2,19 @@
 using Auto.PricingServer;
 using EasyNetQ;
 using Grpc.Net.Client;
+using Microsoft.Extensions.Configuration;
+
 class Program {
     private static Pricer.PricerClient grpcClient;
+    private static readonly IConfigurationRoot config = ReadConfiguration();
     private static IBus bus;
     static async Task Main(string[] args) {
         Console.WriteLine("Starting Auto.PricingClient");
-        var amqp ="amqp://user:rabbitmq@localhost:5672";
-        bus = RabbitHutch.CreateBus(amqp);
+        bus = RabbitHutch.CreateBus(config.GetConnectionString("AutoRabbitMQ"));
         Console.WriteLine("Connected to bus; Listening for newVehicleMessages");
-        using var channel = GrpcChannel.ForAddress("https://localhost:7175");
+        using var channel = GrpcChannel.ForAddress(config.GetConnectionString("gRPC_URL"));
         grpcClient = new Pricer.PricerClient(channel);
-        Console.WriteLine($"Connected to gRPC on localhost:7175!");
+        Console.WriteLine($"Connected to gRPC on {config.GetConnectionString("gRPC_URL")}!");
         var subscriberId = $"Auto.PricingClient@{Environment.MachineName}";
         await bus.PubSub.SubscribeAsync<NewOwnerMessage>(subscriberId, HandleNewOwnerVehicleMessage);
         Console.WriteLine("Press Enter to exit");
@@ -31,4 +33,15 @@ class Program {
             priceReply.VehicleColor, priceReply.VehicleYear ,priceReply.Price, priceReply.CurrencyCode);
         await bus.PubSub.PublishAsync(newOwnerVehiclePriceMessage);
     }
+    
+    private static IConfigurationRoot ReadConfiguration()
+    {
+        var basePath = Directory.GetParent(AppContext.BaseDirectory).FullName;
+        return new ConfigurationBuilder()
+            .SetBasePath(basePath)
+            .AddJsonFile("appsettings.json")
+            .AddEnvironmentVariables()
+            .Build();
+    }
+    
 }
