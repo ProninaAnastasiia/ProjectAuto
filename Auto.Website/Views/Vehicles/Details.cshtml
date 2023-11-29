@@ -1,0 +1,20 @@
+@model Auto.Data.Entities.Vehicle
+@{
+    ViewData["Title"] = $"{Model.Registration} : Auto";
+}
+<h1>@Model.Registration</h1>
+<hr />
+<dl>
+    <dt>Owner:</dt>
+    @if (Model.Owner != null) {
+        <dd><a href="@Url.Action("Owner", "Owners", new { id = Model.Owner.Email})">@Model.Owner.FirstName @Model.Owner.LastName</a></dd>
+    } else {
+        <dd> - </dd>
+    }
+    <dt>Model:</dt>
+    <dd>@Model.VehicleModel.Name</dd>
+    <dt>Year:</dt>
+    <dd>@Model.Year</dd>
+    <dt>Colour:</dt>
+    <dd>@Model.Color</dd>
+</dl>

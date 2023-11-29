@@ -1,0 +1,14 @@
+@model Auto.Data.Entities.Model
+
+<h1>@Model.Manufacturer.Name @Model.Name</h1>
+<hr />
+@if (Model.Vehicles.Any()) {
+    <ul>
+        @foreach (var vehicle in Model.Vehicles) {
+            <li><a href="@Url.Action("Details", "Vehicles", new { id = vehicle.Registration})">@vehicle.Registration</a></li>
+        }
+    </ul>
+} else {
+    <p><em>We don't have any @Model.Manufacturer.Name @Model.Name cars for sale right now.</em></p>
+}
+<hr />

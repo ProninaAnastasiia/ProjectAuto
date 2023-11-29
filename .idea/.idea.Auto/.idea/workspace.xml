@@ -15,13 +15,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a1a9d46-5ae3-494a-9cb1-fd0dbe7915aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Auto.Notifier/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auto.PricingClient/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Controllers/ModelsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Controllers/OwnersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Controllers/VehiclesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Models/Vehicles.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Models/index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Owners/Owner.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Vehicles/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auto.Website/Views/Vehicles/index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auto/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Notifier/Auto.Notifier.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Notifier/Auto.Notifier.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.Notifier/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Notifier/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.PricingClient/Auto.PricingClient.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.PricingClient/Auto.PricingClient.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auto.PricingClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.PricingClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auto.Website/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Auto.Website/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,36 +38,13 @@
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50b9fdb5decb45c2a37535a22a5d75fa60c90/b3/d0043053/Hub.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/1d/804d3c57/Uri.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/1e/3d76e1bc/UriBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/5d/7fd414f4/UriHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/a4/cb754c5d/ValueStringBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/aaaefdf6d8ba49648b565fcd9ee5ac1d3da90/b7/dd0348e2/UriParser.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b3ceabc223ad463fa3a5e601cf9f26cc3c498/14/976bd0c9/ConcurrentDictionary`2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/c72f88f10d744b66a7662c78aee355b755dd8/b5/f941bef1/Microsoft.Data.SqlClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1f662322b5d5363afa8e8c2f7619ab8dfd879a35d656d7956b5c0ddfffc496/FileStreamHelpers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/228dc3749b539e3c9e25e39aef9ae46e8f91a982c59edd810118695e168978/FileStreamHelpers.Windows.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3684e888fd93508450e2f4b0d7d38bee648cba98882592491596fc79375185f/SwaggerMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3f13d6e72b98d8df689bdf6f96e785c26253f95a5e49ee8a54587b412f0ec/HttpHeaders.Generated.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4e7d1760ee621d939d6c87a4818f36525d4d27513aa9a536bf91252934862/UnaryServerMethodInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5140117f66c77eaa2663104f6c227f9a76a388f51898b4da73e8fdaddacbbe0/PubSubExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/575c31ecc35a636b6f962cb71d53992552941a18982aae1c8e6c16305cc3761b/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5956701c92ec47bc98145555cd08eafca23890/_f2557/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5e6de55b6e86648735b919206fd8cbfe441ef5504cb82cf1ee3712663cef8/Assembly.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/674c71843d84ca4dd4136791da5d304790392cdfdd5e202244bc5c42695743d/EndpointMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/685375de32fa2adf315b38f6d22782547cd9795e6d4d109e94522c8b6cc446c0/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/974fa14c57bab8fe29f1bddd39b1a6548b9cc8cf9e0ef5e670c2407a56d9/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b56a992da534ff2f7a8e226182a4862f1dc19c49fb9305485051deb348cc23/StreamReader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bf1f37a154e6279f9da6e62025b977f430b2f555545f3363ac935cda48bf543/UnaryServerCallHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6827df44788ea7dd67e37123854ccefcad967c9bba26626d89a237abae8a8a8/String.Searching.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cead5a8f96c3b563dd1d716869292e541df695eb9f8e6d0496c97f714fc279b/ServerCallHandlerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7e231682be8652744726acc6de35323daa68061429db55e0c251114902f60/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e8d3bcb75657e1215392dfd276529f3c965e923e468ed653f863cdffe755472/HttpProtocol.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f324c62785677b53e916aa9084ae54a42014c79d132908ae191cf8e3af4cfb/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Auto.Notifier/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Auto.OwnerServer/obj/Debug/net6.0/Protos/Greet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Auto.PricingClient/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Auto.OwnerServer/obj/Debug/net6.0/Protos/Greet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7e231682be8652744726acc6de35323daa68061429db55e0c251114902f60/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8d3195c9ba918c7860b66ce3965d4b9f173653cfea2479e8bb842d3513a89b/RazorPageOfT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6827df44788ea7dd67e37123854ccefcad967c9bba26626d89a237abae8a8a8/String.Searching.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/974fa14c57bab8fe29f1bddd39b1a6548b9cc8cf9e0ef5e670c2407a56d9/String.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,18 +57,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.60784316&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager" selected=".NET Project.Auto.Notifier">
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.Auto.Website">
     <configuration name="Auto.AuditLog" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -269,7 +246,16 @@
       <workItem from="1674175334334" duration="7786000" />
       <workItem from="1674325881095" duration="3306000" />
       <workItem from="1674403078850" duration="3106000" />
-      <workItem from="1674408454590" duration="2354000" />
+      <workItem from="1674408454590" duration="2891000" />
+      <workItem from="1674508376354" duration="521000" />
+      <workItem from="1674531267893" duration="475000" />
+      <workItem from="1678749588510" duration="136000" />
+      <workItem from="1680129984991" duration="192000" />
+      <workItem from="1680130250400" duration="97000" />
+      <workItem from="1693570716315" duration="609000" />
+      <workItem from="1693866924052" duration="72000" />
+      <workItem from="1696792075598" duration="2365000" />
+      <workItem from="1701256848016" duration="6387000" />
     </task>
     <task id="LOCAL-00001" summary="Added GraphQL for Owner">
       <created>1665148060603</created>
@@ -285,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674329074274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added appsettings.json with ConnectionStrings for Notifier and PricingClient">
+      <created>1674410934018</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674410934018</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +302,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added GraphQL for Owner" />
     <MESSAGE value="Added SignalR" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SignalR" />
+    <MESSAGE value="Added appsettings.json with ConnectionStrings for Notifier and PricingClient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added appsettings.json with ConnectionStrings for Notifier and PricingClient" />
   </component>
 </project>

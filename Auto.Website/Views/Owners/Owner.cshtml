@@ -1,0 +1,16 @@
+@model Auto.Data.Entities.Owner
+@{
+    ViewData["Title"] = $"{Model.VehicleCode} : Auto";
+}
+<h1>Владелец @Model.VehicleCode</h1>
+<hr />
+<dl>
+    <dt>FirstName:</dt>
+    <dd>@Model.FirstName</dd>
+    <dt>LastName:</dt>
+    <dd>@Model.LastName</dd>
+    <dt>Phone:</dt>
+    <dd>@Model.PhoneNumber</dd>
+    <dt>Email:</dt>
+    <dd>@Model.Email</dd>
+</dl>
